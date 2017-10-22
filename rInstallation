@@ -1,0 +1,15 @@
+# Add cran mirror to a .list file in /etc/apt/sources.list.d/ (rstudio works)
+sudo gedit /etc/apt/sources.list.d/$nameFileE.G.cran-mirror.list
+
+# sudo apt-get update
+
+  # If there is an issue with a public key, add with the following:
+    sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys $KEY.FROM.ERROR
+
+# sudo apt-get install r-base
+
+  # If there is an issue with versions and directories:#
+    sudo cp /etc/bash_completion.d/R /usr/share/bash-completion/completions/R
+    sudo apt-get -f install
+
+# sudo apt-get install r-base-dev
